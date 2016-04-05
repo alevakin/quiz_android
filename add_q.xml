@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="What is your question?"
+            android:id="@+id/textView6"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_q"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true"
+            android:text="Type your question" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/save"
+            android:onClick="save"
+            android:layout_marginBottom="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_a"
+            android:layout_below="@+id/new_q"
+            android:layout_alignParentStart="true"
+            android:text="Choice A" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_d"
+            android:layout_below="@+id/new_c"
+            android:layout_alignParentStart="true"
+            android:text="Choice D" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_c"
+            android:layout_below="@+id/new_b"
+            android:layout_alignParentStart="true"
+            android:text="Choice C" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_b"
+            android:layout_below="@+id/new_a"
+            android:layout_alignParentStart="false"
+            android:text="Choice B" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_r"
+            android:layout_below="@+id/new_d"
+            android:layout_alignParentStart="true"
+            android:text="Right answer (type a, b, c or d)" />
+
+    </RelativeLayout>
+</LinearLayout>
